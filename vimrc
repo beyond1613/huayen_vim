@@ -1,3 +1,9 @@
+call pathogen#infect()
+nnoremap <silent> <F5> :NERDTree<CR>
+
+filetype on
+filetype plugin on
+
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
@@ -52,7 +58,7 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-filetype plugin on
+"filetype plugin on
 
 if &term=="xterm"
      set t_Co=8
