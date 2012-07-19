@@ -1,3 +1,5 @@
+command! Status echo "All system are go!"
+
 call pathogen#infect()
 nnoremap <silent> <F5> :NERDTree<CR>
 
