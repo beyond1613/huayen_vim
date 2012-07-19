@@ -1,10 +1,16 @@
 command! Status echo "All system are go!"
 
+"pathogen
 call pathogen#infect()
 nnoremap <silent> <F5> :NERDTree<CR>
 
+"The NERD Tree
+" Taglist
+" SnipMate
 filetype on
 filetype plugin on
+
+let g:neocomplcache_enable_at_startup = 1
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
